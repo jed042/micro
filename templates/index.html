@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Latest News Images</title>
+</head>
+<body>
+    <h1>Latest News Images</h1>
+    <p>There are {{ images|length }} images.</p>
+    {% for image in images %}
+    <img src="{{ url_for('static', filename='images/' + image) }}" width="200" alt="News Image">
+    {% endfor %}
+</body>
+</html>
