@@ -1,0 +1,4 @@
+flask
+newsapi-python
+groq
+requests
